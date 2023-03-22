@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Тесты с методом DELETE" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-03-22T10:00:59" hostname="MacBook-Air-Boris.local" time="5.625">
+  <properties/>
+  <testcase name="Удаление книги с несуществующим ID" classname="api.DeleteTest" time="5.534"/>
+  <testcase name="Удаление книги" classname="api.DeleteTest" time="0.08"/>
+  <system-out><![CDATA[Request method:	DELETE
+Request URI:	http://localhost:5000/api/books/1999
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+2023-03-22 13:01:04 [INFO ] helpers.RequestHelper:sendRequest:47 Response body: {
+    "error": "Book with id 1999 not found"
+}
+Request method:	DELETE
+Request URI:	http://localhost:5000/api/books/45
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+2023-03-22 13:01:04 [INFO ] helpers.RequestHelper:sendRequest:47 Response body: {
+    "result": true
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
